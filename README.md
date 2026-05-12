@@ -45,21 +45,25 @@ Draw lines on the image.
 Display the result.
 
 
-### Read image and convert it to grayscale image
+## Read image and convert it to grayscale image
+### Importing required packages
 ```
 import numpy as np
 import cv2
 import matplotlib.pyplot as plt
 ```
+### Read The Image
 ```
 img=cv2.imread("me.jpeg",0)
 img_c=cv2.imread("me.jpeg",1)
 img_c=cv2.cvtColor(img_c,cv2.COLOR_BGR2RGB)
 ```
+### Convert to Scale
 ```
 gray=cv2.cvtColor(img,cv2.COLOR_GRAY2RGB)
 gray = cv2.GaussianBlur(gray,(3,3),0)
 ```
+### Display original Image
 ```
 plt.figure(figsize=(13,13))
 plt.subplot(1,2,1)
@@ -67,6 +71,7 @@ plt.imshow(img_c)
 plt.title("Original Image")
 plt.axis("off")
 ```
+### Display the Gray Image
 ```
 plt.subplot(1,2,2)
 plt.imshow(gray)
@@ -102,19 +107,26 @@ plt.show()
 
 ## Output
 
-### Input image and grayscale image
+### Input image 
+
+<img width="548" height="306" alt="image" src="https://github.com/user-attachments/assets/24863f03-b10b-49eb-8b44-910aaf0f2846" />
+
+### grayscale image
 
 
+<img width="812" height="485" alt="image" src="https://github.com/user-attachments/assets/3a4a6166-92f6-4cb4-8796-ff4e947a2151" />
 
 <br>
 
 ### Canny Edge detector output
 
+<img width="826" height="490" alt="image" src="https://github.com/user-attachments/assets/328dc4ea-669d-41d1-9da5-bb464d8dfaab" />
 
 <br>
 
 ### Display the result of Hough transform
 
+<img width="856" height="488" alt="image" src="https://github.com/user-attachments/assets/3046eac5-a62a-479f-a62a-910a34bfb5b5" />
 
 <br>
 
