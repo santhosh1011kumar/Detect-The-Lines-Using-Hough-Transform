@@ -1,4 +1,4 @@
-# Detect-The-Lines-Using-Hough-Transform#  Lane Detection
+# Detect-The-Lines-Using-Hough-Transform  Lane Detection
 ## NAME : SANTHOSH KUMAR A
 ## REG NO: 21222423250
 ##  Aim
